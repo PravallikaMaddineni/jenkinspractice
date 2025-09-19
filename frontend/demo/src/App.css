@@ -11,8 +11,8 @@ body {
 }
 
 .container {
-  max-width: 700px;
-  width: 100%;
+  max-width: 800px;   /* wider container */
+  width: 90%;          /* responsive width */
   text-align: center;
 }
 
@@ -26,15 +26,17 @@ h2, h3 {
 /* ==== Form Styling ==== */
 form {
   background-color: #fff;
-  padding: 25px;
-  border-radius: 10px;
+  padding: 40px 35px;   /* more padding */
+  border-radius: 12px;
   border: 1px solid #eee;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  margin-bottom: 30px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  margin: 20px auto 30px auto;
+  width: 100%;          /* full container width */
+  max-width: 500px;     /* limit form width */
 }
 
 form div {
-  margin: 15px 0;
+  margin: 18px 0;      /* spacing between fields */
   text-align: left;
 }
 
@@ -48,31 +50,42 @@ form label {
 form input,
 form select {
   width: 100%;
-  padding: 10px 12px;
-  border-radius: 6px;
+  padding: 14px 16px;   /* taller inputs */
+  font-size: 1.05rem;   /* slightly bigger text */
+  border-radius: 8px;
   border: 1px solid #ccc;
   background-color: #fff;
-  color: #333;   /* ✅ dark text, now visible */
+  color: #222;
   outline: none;
-  font-size: 1rem;
   transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Placeholder style */
+form input::placeholder,
+form select::placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
 }
 
 form input:focus,
 form select:focus {
   border-color: #ff9800;
   box-shadow: 0 0 5px rgba(255, 152, 0, 0.3);
+  background-color: #fff;
+  color: #222;
 }
 
 /* ==== Button ==== */
 form button {
-  margin-top: 15px;
-  padding: 12px 28px;
+  margin-top: 20px;
+  padding: 14px 32px;
   background-color: #ff9800;
   color: #fff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
+  font-size: 1.05rem;
   cursor: pointer;
   transition: background 0.2s ease-in-out, transform 0.1s;
 }
