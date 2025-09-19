@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+C:\Users\hydms\Downloads\practice fullstack\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1041194293.index
-3435648363.index
-3668684453.index
-1181459462.index
-735416682.index
-2301143305.index
