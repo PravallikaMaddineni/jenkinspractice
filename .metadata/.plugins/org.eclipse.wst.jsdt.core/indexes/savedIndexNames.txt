@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+C:\Users\hydms\Downloads\practice_fullstack\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1606354826.index
+533712581.index
+633532382.index
+2611397893.index

@@ -1,0 +1,129 @@
+/* ==== General Page Layout ==== */
+body {
+  background: #f9f9f9;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;   /* wider container */
+  width: 90%;          /* responsive width */
+  text-align: center;
+}
+
+/* ==== Headings ==== */
+h2, h3 {
+  color: #ff9800;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ==== Form Styling ==== */
+form {
+  background-color: #fff;
+  padding: 40px 35px;   /* more padding */
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  margin: 20px auto 30px auto;
+  width: 100%;          /* full container width */
+  max-width: 500px;     /* limit form width */
+}
+
+form div {
+  margin: 18px 0;      /* spacing between fields */
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #444;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 14px 16px;   /* taller inputs */
+  font-size: 1.05rem;   /* slightly bigger text */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #222;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Placeholder style */
+form input::placeholder,
+form select::placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 5px rgba(255, 152, 0, 0.3);
+  background-color: #fff;
+  color: #222;
+}
+
+/* ==== Button ==== */
+form button {
+  margin-top: 20px;
+  padding: 14px 32px;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, transform 0.1s;
+}
+
+form button:hover {
+  background-color: #e68900;
+  transform: scale(1.02);
+}
+
+/* ==== Table Styling ==== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+table th {
+  background: #ff9800;
+  color: #fff;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table tr:hover {
+  background-color: #fff3e0;
+  transition: 0.2s;
+}
